@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Work Sans;
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf); }
+
+body {
+  margin: 10px 0;
+  background-color: #f9f0ff;
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat; }
+
+h1 {
+  display: inline;
+  padding-left: 20px;
+  color: #2f1533;
+  font: 700 32px Work Sans; }
+
+.star-icon {
+  width: 25px; }
+
+h2 {
+  color: #2f1533;
+  font: 600 16px Work Sans; }
+  h2:hover {
+    color: #ad28eb;
+    transition: 0.5s; }
+
+p {
+  margin: 0;
+  color: #8c6991;
+  font: 400 14px Work Sans;
+  line-height: 21px; }
+
+button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left; }
+
+.accordion-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 97vh; }
+  .accordion-body .accordion {
+    width: 75%;
+    padding: 25px 20px 0;
+    border-radius: 5px;
+    background-color: white; }
+    .accordion-body .accordion .header-container {
+      margin-bottom: 0; }
+    .accordion-body .accordion .container {
+      padding: 10px 0;
+      border-bottom: 1px #f9f0ff solid; }
+      .accordion-body .accordion .container:last-child {
+        border: none; }
+      .accordion-body .accordion .container .label-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+      .accordion-body .accordion .container .open-button {
+        margin-left: 20px; }
+      .accordion-body .accordion .container .active + .content {
+        margin: 10px 5px 10px 0; }
+      .accordion-body .accordion .container .content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s ease-out; }
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url(../assets/images/background-pattern-desktop.svg); }
+  h1 {
+    font: 700 32px Work Sans; }
+  p {
+    font: 400 14px Work Sans; }
+  .accordion-body .accordion {
+    border-radius: 15px; }
+    .accordion-body .accordion .header-container {
+      margin-bottom: 10px; } }
+
+@media only screen and (min-width: 671px) {
+  h1 {
+    font: 700 56px Work Sans; }
+  .star-icon {
+    width: auto; }
+  h2 {
+    font: 600 18px Work Sans; }
+  p {
+    font: 400 16px Work Sans;
+    line-height: 24px; }
+  .accordion-body .accordion {
+    width: 520px;
+    padding: 40px 40px 20px;
+    border-radius: 15px; }
+    .accordion-body .accordion .header-container {
+      margin-bottom: 10px; }
+    .accordion-body .accordion .container {
+      padding: 15px 0; }
+      .accordion-body .accordion .container .open-button {
+        margin-left: 10px; }
+      .accordion-body .accordion .container .active + .content {
+        margin: 0; } }
+
+@media only screen and (min-width: 1441px) {
+  body {
+    background-size: 100%; } }

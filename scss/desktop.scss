@@ -1,0 +1,43 @@
+@media only screen and (min-width: 671px) {
+  h1 {
+    font: $font-h1;
+  }
+
+  .star-icon {
+    width: auto;
+  }
+
+  h2 {
+    font: $font-h2;
+  }
+
+  p {
+    font: $font-p;
+    line-height: 24px;
+  }
+
+  .accordion-body {
+    .accordion {
+      width: 520px;
+      padding: 40px 40px 20px;
+      border-radius: 15px;
+
+      .header-container {
+        margin-bottom: 10px;
+      }
+
+      .container {
+        padding: 15px 0;
+
+        .open-button {
+          margin-left: 10px;
+        }
+
+        .active + .content {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+

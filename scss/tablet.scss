@@ -1,0 +1,23 @@
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+
+  h1 {
+    font: $font-h1-mobile;
+  }
+
+  p {
+    font: $font-p-mobile;
+  }
+
+  .accordion-body {
+    .accordion {
+      border-radius: 15px;
+
+      .header-container {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

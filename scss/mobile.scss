@@ -1,0 +1,89 @@
+body {
+  margin: 10px 0;
+  background-color: $light-pink;
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  display: inline;
+  padding-left: 20px;
+  color: $dark-purple;
+  font: $font-h1-mobile;
+}
+
+.star-icon {
+  width: 25px;
+}
+
+h2 {
+  color: $dark-purple;
+  font: $font-h2-mobile;
+
+  &:hover {
+    color: $hover-purple;
+    transition: 0.5s;
+  }
+}
+
+p {
+  margin: 0;
+  color: $grayish-purple;
+  font: $font-p-mobile;
+  line-height: 21px;
+}
+
+button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.accordion-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 97vh;
+
+  .accordion {
+    width: 75%;
+    padding: 25px 20px 0;
+    border-radius: 5px;
+    background-color: $white;
+
+    .header-container {
+      margin-bottom: 0;
+    }
+
+    .container {
+      padding: 10px 0;
+      border-bottom: 1px $light-pink solid;
+
+      &:last-child {
+        border: none;
+      }
+
+      .label-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .open-button {
+        margin-left: 20px;
+      }
+
+      .active + .content {
+        margin: 10px 5px 10px 0;
+      }
+
+      .content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+      }
+    }
+  }
+}
