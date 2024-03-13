@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-solution-x-GwHsYxw3](https://www.frontendmentor.io/solutions/faq-accordion-solution-x-GwHsYxw3)
+- Live Site URL: [https://main--faq-accordion-challenge-cl4ra.netlify.app/](https://main--faq-accordion-challenge-cl4ra.netlify.app/)
 
 ## My process
 
@@ -43,4 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cl4ram)
+- Frontend Mentor - [@cl4ram](https://www.frontendmentor.io/profile/cl4ram)
