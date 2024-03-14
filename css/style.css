@@ -6,102 +6,93 @@ body {
   margin: 10px 0;
   background-color: #f9f0ff;
   background-image: url(../assets/images/background-pattern-mobile.svg);
-  background-repeat: no-repeat; }
+  background-repeat: repeat-x; }
 
 h1 {
   display: inline;
   padding-left: 20px;
   color: #2f1533;
-  font: 700 32px Work Sans; }
+  font-family: Work Sans;
+  font-weight: 700;
+  font-size: 2rem; }
 
 .star-icon {
   width: 25px; }
 
-h2 {
-  color: #2f1533;
-  font: 600 16px Work Sans; }
-  h2:hover {
-    color: #ad28eb;
-    transition: 0.5s; }
-
 p {
   margin: 0;
   color: #8c6991;
-  font: 400 14px Work Sans;
-  line-height: 21px; }
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.3rem; }
 
 button {
   width: 100%;
   padding: 0;
   border: none;
   background: none;
-  text-align: left; }
+  color: #2f1533;
+  text-align: left;
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 1rem; }
+  button:hover {
+    color: #ad28eb;
+    transition: 0.5s; }
+  button[aria-expanded='false'] + .disclosure__content {
+    display: none; }
+  button[aria-expanded='true'] + .disclosure__content {
+    display: block;
+    margin: 22px 0 5px; }
 
 .accordion-body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 97vh; }
-  .accordion-body .accordion {
-    width: 75%;
-    padding: 25px 20px 0;
-    border-radius: 5px;
-    background-color: white; }
-    .accordion-body .accordion .header-container {
-      margin-bottom: 0; }
-    .accordion-body .accordion .container {
-      padding: 10px 0;
-      border-bottom: 1px #f9f0ff solid; }
-      .accordion-body .accordion .container:last-child {
-        border: none; }
-      .accordion-body .accordion .container .label-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
-      .accordion-body .accordion .container .open-button {
-        margin-left: 20px; }
-      .accordion-body .accordion .container .active + .content {
-        margin: 10px 5px 10px 0; }
-      .accordion-body .accordion .container .content {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.2s ease-out; }
 
-@media only screen and (min-width: 376px) {
+.accordion {
+  width: 75%;
+  padding: 25px 20px 0;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 10px 10px 43px -5px rgba(0, 0, 0, 0.21); }
+
+.header-container {
+  margin-bottom: 8px; }
+
+.container {
+  padding: 8px 0 13px;
+  border-bottom: 1px #f9f0ff solid; }
+  .container:last-child {
+    border: none; }
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0; }
+
+.open-button {
+  margin-left: 20px; }
+
+@media only screen and (min-width: 64rem) {
   body {
     background-image: url(../assets/images/background-pattern-desktop.svg); }
   h1 {
-    font: 700 32px Work Sans; }
-  p {
-    font: 400 14px Work Sans; }
-  .accordion-body .accordion {
-    border-radius: 15px; }
-    .accordion-body .accordion .header-container {
-      margin-bottom: 10px; } }
-
-@media only screen and (min-width: 671px) {
-  h1 {
-    font: 700 56px Work Sans; }
+    font-size: 3.5rem; }
   .star-icon {
     width: auto; }
-  h2 {
-    font: 600 18px Work Sans; }
+  button {
+    font-size: 1.12rem; }
   p {
-    font: 400 16px Work Sans;
-    line-height: 24px; }
-  .accordion-body .accordion {
-    width: 520px;
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .accordion {
+    width: 36%;
     padding: 40px 40px 20px;
-    border-radius: 15px; }
-    .accordion-body .accordion .header-container {
-      margin-bottom: 10px; }
-    .accordion-body .accordion .container {
-      padding: 15px 0; }
-      .accordion-body .accordion .container .open-button {
-        margin-left: 10px; }
-      .accordion-body .accordion .container .active + .content {
-        margin: 0; } }
-
-@media only screen and (min-width: 1441px) {
-  body {
-    background-size: 100%; } }
+    border-radius: 15px;
+    margin-top: 13px; }
+  .container {
+    padding: 15px 0; } }

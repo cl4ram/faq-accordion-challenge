@@ -1,43 +1,35 @@
-@media only screen and (min-width: 671px) {
+@media only screen and (min-width: 64rem) {
+  body {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+
   h1 {
-    font: $font-h1;
+    font-size: 3.5rem;
   }
 
   .star-icon {
     width: auto;
   }
 
-  h2 {
-    font: $font-h2;
+  button {
+    font-size: 1.12rem;
+
   }
 
   p {
-    font: $font-p;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .accordion-body {
-    .accordion {
-      width: 520px;
-      padding: 40px 40px 20px;
-      border-radius: 15px;
+  .accordion {
+    width: 36%;
+    padding: 40px 40px 20px;
+    border-radius: 15px;
+    margin-top: 13px;
+  }
 
-      .header-container {
-        margin-bottom: 10px;
-      }
-
-      .container {
-        padding: 15px 0;
-
-        .open-button {
-          margin-left: 10px;
-        }
-
-        .active + .content {
-          margin: 0;
-        }
-      }
-    }
+  .container{
+    padding: 15px 0;
   }
 }
 
